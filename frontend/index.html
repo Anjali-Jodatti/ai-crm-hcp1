@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HCP Interaction Agent</title>
+</head>
+<body>
+
+<h2>LangGraph HCP Interaction Agent</h2>
+
+<input id="name" placeholder="HCP Name"><br><br>
+<input id="type" placeholder="Interaction Type"><br><br>
+<input id="notes" placeholder="Notes"><br><br>
+
+<button onclick="logInteraction()">Log Interaction</button>
+<button onclick="scheduleMeeting()">Schedule Meeting</button>
+<button onclick="fetchProfile()">Fetch HCP Profile</button>
+<button onclick="nextAction()">Next Best Action</button>
+<button onclick="generateReport()">Generate Report</button>
+
+<p id="output"></p>
+
+<script>
+function logInteraction() {
+  document.getElementById("output").innerText =
+    "Interaction logged successfully for " + document.getElementById("name").value;
+}
+
+function scheduleMeeting() {
+  document.getElementById("output").innerText =
+    "Meeting scheduled successfully!";
+}
+
+function fetchProfile() {
+  document.getElementById("output").innerText =
+    "HCP: Dr. Sharma | Specialization: Cardiologist";
+}
+
+function nextAction() {
+  document.getElementById("output").innerText =
+    "Next Action: Follow up next week";
+}
+
+function generateReport() {
+  document.getElementById("output").innerText =
+    "Report: 5 interactions, 2 follow-ups needed";
+}
+</script>
+
+</body>
+</html>
