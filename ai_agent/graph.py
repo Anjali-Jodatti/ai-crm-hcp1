@@ -1,7 +1,7 @@
 from groq import Groq
 import json
 
-client = Groq(api_key="YOUR_API_KEY")
+client = Groq(api_key="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")
 
 def extract_entities(text):
     prompt = f"""
